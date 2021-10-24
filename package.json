@@ -1,0 +1,33 @@
+{
+  "name": "kelas-pintar",
+  "version": "0.0.0",
+  "private": true,
+  "prisma": {
+    "schema": "./src/prisma/schema.prisma",
+    "seed": "node ./src/prisma/seed.js"
+  },
+  "scripts": {
+    "start": "node ./bin/www",
+    "format": "prettier --write \"src/**/*.js\"",
+    "lint": "eslint --fix \"src/**/*.js\""
+  },
+  "dependencies": {
+    "@prisma/client": "^3.3.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "faker": "^5.5.3",
+    "morgan": "~1.9.1",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
+    "prisma": "^3.3.0"
+  }
+}
