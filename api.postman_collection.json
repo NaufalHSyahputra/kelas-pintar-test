@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "6d66bb50-c949-43a3-a0e0-8e9675a147cb",
+		"name": "Kelas Pintar Test Backend Developer",
+		"description": "Kelas Pintar Test Backend Developer\n\nContact Support:\n Name: Naufal Hakim SYahputra\n Email: naufalhsyahputra@gmail.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "reports",
+			"item": [
+				{
+					"name": "A students performance report of all subjects they are learning, and compare the scores in each subject with the grades average.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/reports",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"reports"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "A list of students performance report.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/reports",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reports"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"student_id\": -61560279,\n \"name\": \"consectetur aliquip dolore\",\n \"subject_name\": \"ut in dolore\",\n \"grade\": \"deserunt do sed\",\n \"avg\": -94941326,\n \"comparison_result\": \"Lorem incididunt\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Top 3 students of each grade based on the highest average of all scores in their performance report.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/reports/top3",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"reports",
+								"top3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "A list of Top 3 students groupped by grade.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/reports/top3",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reports",
+										"top3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": -83713224,\n \"name\": \"sint officia magna laborum\",\n \"grade\": \"et laborum eiusmod ex sit\",\n \"avg\": 2488758\n}"
+						}
+					]
+				},
+				{
+					"name": "A list of student names and their grade that have below average scores in ALL subjects.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/reports/below-average",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"reports",
+								"below-average"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "A list of student names and their grade.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/reports/below-average",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reports",
+										"below-average"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"student_id\": -61560279,\n \"name\": \"consectetur aliquip dolore\",\n \"subject_name\": \"ut in dolore\",\n \"grade\": \"deserunt do sed\",\n \"avg\": -94941326,\n \"comparison_result\": \"Lorem incididunt\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://kelas-pintar-test.herokuapp.com/api",
+			"type": "string"
+		}
+	]
+}
