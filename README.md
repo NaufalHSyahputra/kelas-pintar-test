@@ -48,7 +48,7 @@ Heroku Link: https://kelas-pintar-test.herokuapp.com
 Swagger Link: https://kelas-pintar-test.herokuapp.com/api-docs
 ## API Reference
 ### Swagger Link
-https://kelas-pintar-test.herokuapp.com
+https://kelas-pintar-test.herokuapp.com/api-docs
 
 #### A students performance report of all subjects they are learning, and compare the scores in each subject with the grades average.
 
